@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <script src="JS/bootstrap.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../CSS/isotope.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script></script>
+    <title>期末课程设计</title>
+</head>
+<body onload="init()" style="background-color:aliceblue;" id="hhh">
+    <div class="mycontainer" >
+        <div class="myheader" >
+            <div class="logo">
+                <h1>
+                    <a href="index.html" title="鲁坤的网站">
+                        <font style="color:rgb(30,80,174);"color="#1e50ae">LUKUN'S</font> 
+                        &nbsp;
+                        <font style="color:rg(204,204,204);"color="#cccccc">WEBSITE</font> 
+                    </a>
+                </h1>
+                <i >
+                    从素材到成品 从灵感到杰作
+                </i>
+                <!--  <img src="images/mylogo.png" alt="鲁坤的网站" title="鲁坤的网站"></a> -->
+            </div>
+            
+            <div class="other-link">
+                <ul>
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="pages/team.html">团队阵容</a></li>
+                    <li><a href="pages/photo_spot.html">拍摄现场</a></li>
+                    <li><a href="pages/service_center.html">服务中心</a></li>
+                    <li><a href="pages/about_us.html">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="recomm">
+                <div class="recommend">
+                    <div class="recommend-1">
+                        推荐&nbsp;<span style="color:#ccc;">|</span>&nbsp;<a href="" >片库</a> 
+                    </div>  
+                </div>   
+            </div>
+            <div class="clear"></div>
+            <div class="con-1">
+                <div class="roll-screen " title="最新电影海报展示">
+                   <div  class="circular-picture">
+                        <a href="pages/1.html" id="lunbotu-add"> <img  id="lunbotu" src="images/1.jpg" alt=""></a>
+                   </div>
+                   <script>
+                       function init(){
+                           setInterval("changeImg()",2500);
+                       }
+                       var i=1;
+                       function changeImg(){
+                           i++;
+                           document.getElementById("lunbotu-add").href="pages/"+i+".html";
+                           document.getElementById("lunbotu").src="images/"+i+".jpg";
+                           if(i==5){
+                               i=0;
+                           }
+                       }
+                       function preorder(){
+                           alert("您已成功预约！");
+                       }
+                   </script>
+
+                </div>
+                
+                <div class="divide">
+                   <div class="pop-divide">
+                        <strong> 热门分类
+                   </div>
+                   <a href="#" class="exact-divide left">                      
+                        <span>
+                            华语  
+                        </span>                     
+                    </a>
+                   <a href="#" class="exact-divide right">
+                        <span>
+                            美国
+                        </span>
+                    </a>
+                  <a href="#" class="exact-divide left">                      
+                        <span>
+                            院线  
+                        </span>                     
+                    </a>
+                   <a href="#" class="exact-divide right">
+                        <span>
+                            2019
+                        </span>
+                    </a>
+                    <a href="#" class="exact-divide left">                      
+                        <span>
+                            动作  
+                        </span>                     
+                    </a>
+                   <a href="#" class="exact-divide right">
+                        <span>
+                            魔幻
+                        </span>
+                    </a>
+                    <a href="#" class="exact-divide left">                      
+                        <span>
+                            爱情  
+                        </span>                     
+                    </a>
+                   <a href="#" class="exact-divide right">
+                        <span>
+                            史诗
+                        </span>
+                    </a>
+                   <a href="#" class="more-divide left">
+                       <span>
+                           更多分类>>
+                       </span>
+                   </a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="con-2">
+                <div class="con-2-1 ">
+                    <div class="con-2-1-rmdy left">
+                        <span>
+                            热门电影 
+                        </span>
+                    </div>
+                    <div class="con-2-1-more left">
+                        <a href="pages/#"> 
+                            <span>
+                                更多>>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="con-2-2">
+                    <div class="con-2-2-jt left">
+                        <a href="#">
+                            <div class="movie-pic">
+                                <img src="images/index_image/xlgs.jpg" alt="snrn">
+                            </div>
+                            <div class="movie-name left">
+                                <span>
+                                    驯龙高手3
+                                </span>
+                            </div>
+                            <div class="movie-grade right">
+                                <span>
+                                    8.4
+                                </span>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="movie-resume">
+                                <span>
+                                    系列终章闯龙族秘境
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="con-2-2-jt left">
+                       <a href="#">
+                            <div class="movie-pic">
+                                <img src="images/index_image/fcxd.jpg" alt="snrn">
+                            </div>
+                            <div class="movie-name left">
+                                <span>
+                                    复仇行动
+                                </span>
+                            </div>
+                            <div class="movie-grade right">
+                                <span>
+                                    7.1
+                                </span>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="movie-resume">
+                                <span>
+                                    精英律师硬核复仇
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="con-2-2-jt left">
+                       <a href="#">
+                            <div class="movie-pic">
+                                <img src="images/index_image/qdlms.jpg" alt="snrn">
+                            </div>
+                            <div class="movie-name left">
+                                <span>
+                                    祈祷落幕时
+                                </span>
+                            </div>
+                            <div class="movie-grade right">
+                                <span>
+                                    7.6
+                                </span>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="movie-resume">
+                                <span>
+                                    再现东野圭吾推理宇宙
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="con-2-2-jt left">
+                        <a href="#">
+                            <div class="movie-pic">
+                                <img src="images/index_image/tys.jpg" alt="snrn">
+                            </div>
+                            <div class="movie-name left">
+                                <span>
+                                    调音师
+                                </span>
+                            </div>
+                            <div class="movie-grade right">
+                                <span>
+                                    8.3
+                                </span>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="movie-resume">
+                                <span>
+                                    反转神作见证“戏精的诞生”
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="con-2-2-jt left">
+                        <a href="#">
+                            <div class="movie-pic">
+                                <img src="images/index_image/lsh.jpg" alt="snrn">
+                            </div>
+                            <div class="movie-name left">
+                                <span>
+                                    老师好
+                                </span>
+                            </div>
+                            <div class="movie-grade right">
+                                <span>
+                                    8.9
+                                </span>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="movie-resume">
+                                <span>
+                                    于谦变“恶霸老师”
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="con-2-2-jt left">
+                        <a href="#">
+                            <div class="movie-pic">
+                                <img src="images/index_image/lldq.jpg" alt="snrn">
+                            </div>
+                            <div class="movie-name left">
+                                <span>
+                                    流浪地球
+                                </span>
+                            </div>
+                            <div class="movie-grade right">
+                                <span>
+                                    8.5
+                                </span>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="movie-resume">
+                                <span>
+                                    中国科幻硬核崛起
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="con-2-2-jt left">
+                        <a href="#">
+                            <div class="movie-pic">
+                                <img src="images/index_image/rjxj.jpg" alt="snrn">
+                            </div>
+                            <div class="movie-name left">
+                                <span>
+                                    人间喜剧
+                                </span>
+                            </div>
+                            <div class="movie-grade right">
+                                <span>
+                                   7.4
+                                </span>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="movie-resume">
+                                <span>
+                                    艾伦王智爆笑讨薪
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="con-2-2-jt left">
+                        <a href="#">
+                            <div class="movie-pic">
+                                <img src="images/index_image/tm.jpg" alt="snrn">
+                            </div>
+                            <div class="movie-name left">
+                                <span>
+                                    同谋
+                                </span>
+                            </div>
+                            <div class="movie-grade right">
+                                <span>
+                                    8.5
+                                </span>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="movie-resume">
+                                <span>
+                                    郭富城张家辉千里追凶
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="con-2-2-jt left">
+                       <a href="#">
+                            <div class="movie-pic">
+                                <img src="images/index_image/fcrs.jpg" alt="snrn">
+                            </div>
+                            <div class="movie-name left">
+                                <span>
+                                    飞驰人生
+                                </span>
+                            </div>
+                            <div class="movie-grade right">
+                                <span>
+                                    8.3
+                                </span>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="movie-resume">
+                                <span>
+                                    沈腾黄景瑜爆燃对决
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="con-2-2-jt left">
+                        <a href="#">
+                            <div class="movie-pic">
+                                <img src="images/index_image/ym.jpg" alt="snrn">
+                            </div>
+                            <div class="movie-name left">
+                                <span>
+                                    湮灭
+                                </span>
+                            </div>
+                            <div class="movie-grade right">
+                                <span>
+                                    8.2
+                                </span>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="movie-resume">
+                                <span>
+                                    年度科幻烧脑神作
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+                <div class="con-2-3" id="222">
+                    <div class="con-2-3-jjsy left">
+                        <span>
+                            即将上映 
+                        </span>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="con-2-4">
+                    <div class="con-2-4-jt left">
+                        <a href="#">
+                            <div class="win-1">
+                                <div class="jqqd">
+                                    <p>敬请期待</p> 
+                                    <p>----------<span class="glyphicon glyphicon-record"></span>----------</p> 
+                                    
+                                </div>
+                                <div class="postcard">
+                                    <img src="images/index_image/bbsgbsdgs.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    比悲伤更悲伤的故事
+                                </div>
+                            </div>
+                        </a>
+                        <div class="yy">
+                            <div class="yyrs left">
+                                111.8万人已预约
+                            </div>
+                            <div class="yybtn right" onclick="preorder()">
+                                预约
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-2-4-jt left">
+                        <a href="#">
+                            <div class="win-1">
+                                <div class="jqqd">
+                                    <p>敬请期待</p> 
+                                    <p>----------<span class="glyphicon glyphicon-record"></span>----------</p> 
+                                    
+                                </div>
+                                <div class="postcard">
+                                    <img src="images/index_image/zxth.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    转型团伙
+                                </div>
+                            </div>
+                        </a>
+                        <div class="yy">
+                            <div class="yyrs left">
+                                35.2万人已预约
+                            </div>
+                            <div class="yybtn right" onclick="preorder()">
+                                预约
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-2-4-jt left">
+                        <a href="#">
+                            <div class="win-1">
+                                <div class="jqqd">
+                                    <p>敬请期待</p> 
+                                    <p>----------<span class="glyphicon glyphicon-record"></span>----------</p> 
+                                    
+                                </div>
+                                <div class="postcard">
+                                    <img src="images/index_image/ynyx.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    欲念游戏
+                                </div>
+                            </div>
+                        </a>
+                        <div class="yy">
+                            <div class="yyrs left">
+                                6.1万人万预约
+                            </div>
+                            <div class="yybtn right" onclick="preorder()">
+                                预约
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-2-4-jt left">
+                        <a href="#">
+                            <div class="win-1">
+                                <div class="jqqd">
+                                    <p>敬请期待</p> 
+                                    <p>----------<span class="glyphicon glyphicon-record"></span>----------</p> 
+                                    
+                                </div>
+                                <div class="postcard">
+                                    <img src="images/index_image/kndjf.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    狂怒的金佛
+                                </div>
+                            </div>
+                        </a>
+                        <div class="yy">
+                            <div class="yyrs left">
+                                11.万人已预约
+                            </div>
+                            <div class="yybtn right" onclick="preorder()">
+                                预约
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-2-4-jt left">
+                        <a href="#">
+                            <div class="win-1">
+                                <div class="jqqd">
+                                    <p>敬请期待</p> 
+                                    <p>----------<span class="glyphicon glyphicon-record"></span>----------</p> 
+                                    
+                                </div>
+                                <div class="postcard">
+                                    <img src="images/index_image/bxmykxq.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    波西米亚狂想曲
+                                </div>
+                            </div>
+                        </a>
+                        <div class="yy">
+                            <div class="yyrs left">
+                                11.1万人已预约
+                            </div>
+                            <div class="yybtn right" onclick="preorder()">
+                                预约
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="con-3">
+                <div class="con-left left">
+                    <div class="title">
+                         影院资讯
+                    </div>
+                    <div class="content-true">
+                        <div class="zxnr left">
+                            <a href="">
+                                <div class="postcard">
+                                    <img src="images/index_image/heifenghaung.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    X战警：黑凤凰
+                                </div>
+                                <div class="movie_resume">
+                                    奏响X战警反击绝唱
+                                </div>
+                            </a>
+                        </div>
+                        <div class="zxnr left">
+                            <a href="">
+                                <div class="postcard">
+                                    <img src="images/index_image/gjdx.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    冠军的心
+                                </div>
+                                <div class="movie_resume">
+                                    40岁的杨坤变拼命三郎
+                                </div>
+                            </a>
+                        </div>
+                        <div class="zxnr left">
+                            <a href="">
+                                <div class="postcard">
+                                    <img src="images/index_image/gesila.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    哥斯拉2：怪兽之王
+                                </div>
+                                <div class="movie_resume">
+                                    怪兽界世纪对决
+                                </div>
+                            </a>
+                        </div>
+                        <div class="zxnr left">
+                           <a href="">
+                                <div class="postcard">
+                                    <img src="images/index_image/ytgdsm.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    一条狗的使命2
+                                </div>
+                                <div class="movie_resume">
+                                    泪点预告爆哭预警
+                                </div>
+                            </a>
+                        </div>
+                        <div class="zxnr left">
+                           <a href="">
+                                <div class="postcard">
+                                    <img src="images/index_image/qegl.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    企鹅公路
+                                </div>
+                                <div class="movie_resume">
+                                    超清爽画风勾勒企鹅出没
+                                </div>
+                            </a>
+                        </div>
+                        <div class="zxnr left">
+                            <a href="">
+                                <div class="postcard">
+                                    <img src="images/index_image/ygmqdfc.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    一个母亲的复仇
+                                </div>
+                                <div class="movie_resume">
+                                    高能复仇片段燃哭观众
+                                </div>
+                            </a>
+                        </div>
+                        <div class="zxnr left">
+                            <a href="">
+                                <div class="postcard">
+                                    <img src="images/index_image/zhdwm.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    最好的我们
+                                </div>
+                                <div class="movie_resume">
+                                    光亮对话时光直面遗憾
+                                </div>
+                            </a>
+                        </div>
+                        <div class="zxnr left">
+                            <a href="">
+                                <div class="postcard">
+                                    <img src="images/index_image/cjdw.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    超级的我
+                                </div>
+                                <div class="movie_resume">
+                                    复联导演监制奇幻大片
+                                </div>
+                            </a>
+                        </div>
+                        <div class="zxnr left">
+                            <a href="">
+                                <div class="postcard">
+                                    <img src="images/index_image/zl2.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                    追龙2
+                                </div>
+                                <div class="movie_resume">
+                                    梁家辉古天乐善恶对决
+                                </div>
+                            </a>
+                        </div>
+                        <div class="zxnr left">
+                            <a href="">
+                                <div class="postcard">
+                                    <img src="images/index_image/twbdx.jpg" alt="">
+                                </div>
+                                <div class="movie_name">
+                                   跳舞吧，大象
+                                </div>
+                                <div class="movie_resume">
+                                    开心麻花艾伦逗你一夏
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="con-right right">
+                   <div class="title">
+                       昨日票房
+                   </div>
+                   <div class="paihang">
+                        <div class="phlist" >
+                            <a href="#" title="大侦探皮卡丘">
+                                <div class="xuhao left" style="background-color:orange;">
+                                    1
+                                </div>
+                                <div class="movielist left">
+                                    大侦探皮卡丘
+                                </div>
+                            </a>
+                        </div>
+                        <div class="phlist">
+                           <a href="#" title="复仇者联盟4：终结之战">
+                                <div class="xuhao left" style="background-color:orange;">
+                                    2
+                                </div>
+                                <div class="movielist left">
+                                    复仇者联盟4：终结之战
+                                </div>
+                            </a>
+                        </div>
+                        <div class="phlist">
+                            <a href="#" title="何以为家">
+                                <div class="xuhao left" style="background-color:orange;">
+                                    3
+                                </div>
+                                <div class="movielist left">
+                                    何以为家
+                                </div>
+                            </a>
+                        </div>
+                        <div class="phlist">
+                            <a href="#" title="一个母亲的复仇">
+                                <div class="xuhao left" style="background-color:gray;">
+                                    4
+                                </div>
+                                <div class="movielist left">
+                                    一个母亲的复仇
+                                </div>
+                            </a>
+                        </div>
+                        <div class="phlist">
+                            <a href="#" title="周恩来回延安">
+                                <div class="xuhao left" style="background-color:gray;">
+                                    5
+                                </div>
+                                <div class="movielist left">
+                                    周恩来回延安
+                                </div>
+                            </a>
+                        </div>
+                        <div class="phlist">
+                            <a href="#" title="下一任：前任">
+                                <div class="xuhao left" style="background-color:gray;">
+                                    6
+                                </div>
+                                <div class="movielist left">
+                                    下一任：前任
+                                </div>
+                            </a>
+                        </div>
+                        <div class="phlist">
+                            <a href="#" title="反贪风暴4">
+                                <div class="xuhao left" style="background-color:gray;">
+                                    7
+                                </div>
+                                <div class="movielist left">
+                                    反贪风暴4
+                                </div>
+                            </a>
+                        </div>
+                        <div class="phlist">
+                            <a href="#" title="进京城">
+                                <div class="xuhao left" style="background-color:gray;">
+                                    8
+                                </div>
+                                <div class="movielist left">
+                                    进京城
+                                </div>
+                            </a>
+                        </div>
+                        <div class="phlist">
+                            <a href="#" title="罗马">
+                                <div class="xuhao left" style="background-color:gray;">
+                                    9
+                                </div>
+                                <div class="movielist left">
+                                    罗马
+                                </div>
+                            </a>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="no-more">
+                <p>已经最底下，木有更多了。。。</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="myfooter">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="lxwm">
+                        <p><span style="font-size:16px; color: gray;">联系我们：</span></p>
+                        <i style="font-size:36px;color: #1e50ae;">13100626808</i>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="footer-center">
+                    <div class="lxfs">
+                        <p>联系QQ：2685977513</p>
+                        <p>联系电话：13100626808</p>
+                        <p>联系邮箱：2685977513@qq.com</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="lxdz">
+                        <p>联系地址：中南财经政法大学(南湖校区) 临湖一栋</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="return-nav">
+                    <ul>
+                        <li><a href="index.html">主页</a></li>
+                        <li><a href="pages/team.html">团队阵容</a></li>
+                        <li><a href="pages/photo_spot.html">拍摄现场</a></li>
+                        <li><a href="pages/service_center.html">服务中心</a></li>
+                        <li><a href="pages/about_us.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                        ©2019 - 鲁坤的网站 版权所有
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

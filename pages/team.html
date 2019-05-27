@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/isotope.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/bootstrap.js"></script>
+    <title>团队阵容</title>
+</head>
+<body>
+    <div class="mycontainer">
+        <div class="myheader" >
+            <div class="logo">
+                <h1>
+                    <a href="../index.html" title="鲁坤的网站">
+                        <font style="color:rgb(30,80,174);"color="#1e50ae">Lukun's</font> 
+                        &nbsp;
+                        <font style="color:rg(204,204,204);"color="#cccccc">Website</font> 
+                    </a>
+                </h1>
+                <i >
+                    从素材到成品 从灵感到杰作
+                </i>
+                <!--  <img src="images/mylogo.png" alt="鲁坤的网站" title="鲁坤的网站"></a> -->
+            </div>
+            
+            <div class="other-link">
+                <ul>
+                    <li><a href="../index.html">主页</a></li>
+                    <li><a href="#">团队阵容</a></li>
+                    <li><a href="photo_spot.html">拍摄现场</a></li>
+                    <li><a href="service_center.html">服务中心</a></li>
+                    <li><a href="about_us.html">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <hr style="height: 3px;background-color:#ccc">
+        <div class="team-content">
+            <div class="portfolio" id="port">
+				<div class="service-head text-center">
+						<h4>TEAMS</h4>
+						<h3>MY<span>PORTFOLIO</span></h3>
+						<span class="border one"></span>
+					</div>
+			<div class="portfolio-grids">
+				<div class="sap_tabs">
+					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						<ul class="resp-tabs-list">
+							<li class="resp-tab-item" aria-controls="tab_item-0" onclick="displayall()" role="tab"><span>ALL</span> </li> 
+							<li class="resp-tab-item" aria-controls="tab_item-1" onclick="display1()" role="tab"><span>ACOTRS & ACTRESS</span></li> 
+							<li class="resp-tab-item" aria-controls="tab_item-2" onclick="display2()" role="tab"><span>DIRECTORS</span></li> 				
+							<li class="resp-tab-item" aria-controls="tab_item-3" onclick="display3()" role="tab"><span>SCREENWRITERS</span></li> 
+						</ul>				  	 
+					</div>
+				</div>
+            </div>
+            
+            <div class="photos-wall">
+                <!-- 这里利用了table -->
+                <table cellspacing="10">
+                    <tbody>
+                        <tr id="tr1">
+                            <td><img src="../images/team/hg1.jpg" alt="胡歌" title="胡歌"></td>
+                            <td><img src="../images/team/pyy.jpg" alt="彭于晏" title="彭于晏"></td>
+                            <td><img src="../images/team/cxk1.jpg" alt="鸡你太美" title="鸡你太美"></td>
+                            <td><img src="../images/team/ck1.jpg" alt="陈坤" title="陈坤"></td>
+                        </tr>
+                        <tr id="tr2">
+                            <td><img src="../images/team/nn1.jpg" alt="倪妮" title="倪妮"></td>
+                            <td><img src="../images/team/ty1.jpg" alt="唐嫣" title="唐嫣"></td>
+                            <td><img src="../images/team/ym1.jpg" alt="杨幂" title="杨幂"></td>
+                            <td><img src="../images/team/zzx1.jpg" alt="张芷溪" title="张芷溪"></td>
+                        </tr>
+                        <tr id="tr3">
+                            <td><img src="../images/team/zym1.jpg" alt="张艺谋" title="张艺谋"></td>
+                            <td><img src="../images/team/zxc1.jpg" alt="周星驰" title="周星驰"></td>
+                            <td><img src="../images/team/xk1.jpg" alt="徐克" title="徐克"></td>
+                            <td><img src="../images/team/fxg1.jpg" alt="冯小刚" title="冯小刚"></td>
+                        </tr>
+                        <tr id="tr4">
+                            <td><img src="../images/team/zjl1.jpg" alt="张家鲁" title="张家鲁"></td>
+                            <td><img src="../images/team/lzy1.jpg" alt="刘震云" title="刘震云"></td>
+                            <td><img src="../images/team/sh1.jpg" alt="束焕" title="束焕"></td>
+                            <td><img src="../images/team/sp1.jpg" alt="述平" title="述平"></td>
+                        </tr>
+                        <tr id="learn_more" style="height:50px!important;">
+                            <td style="border:0;"style="height:50px !important;">
+                                <a href="#port" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal" >更多成员</a>
+                            </td>
+                        </tr>
+                        <script>
+                            function displayall(){
+                                var tr1 = document.getElementById("tr1");
+                                var tr2 = document.getElementById("tr2");
+                                var tr3 = document.getElementById("tr3");
+                                var tr4 = document.getElementById("tr4");
+                                var blogs1 = document.getElementById("blogs1");
+                                var learn_more = document.getElementById("learn_more");
+                                tr1.style.cssText='visibility:visible;position:relative;';
+                                tr2.style.cssText='visibility:visible;position:relative;';
+                                tr3.style.cssText='visibility:visible;position:relative;';
+                                tr4.style.cssText='visibility:visible;position:relative;';
+                                blogs1.style.cssText='margin-top:900px;';
+                                learn_more.style.cssText='visibility:visible;position:relative;';
+
+                            }
+                            function display1(){
+                                var tr1 = document.getElementById("tr1");
+                                var tr2 = document.getElementById("tr2");
+                                var tr3 = document.getElementById("tr3");
+                                var tr4 = document.getElementById("tr4");
+                                var blogs1 = document.getElementById("blogs1");
+                                var learn_more = document.getElementById("learn_more");
+                                tr1.style.cssText='visibility:visible;position:relative;';
+                                tr2.style.cssText='visibility:visible;position:relative;';
+                                tr3.style.cssText='visibility:hidden;position:absolute;';
+                                tr4.style.cssText='visibility:hidden;position:absolute;';
+                                blogs1.style.cssText='margin-top:500px;';
+                                learn_more.style.cssText='visibility:visible;position:relative;';
+                            }    
+                            function display2(){                                
+                                var tr1 = document.getElementById("tr1");
+                                var tr2 = document.getElementById("tr2");
+                                var tr3 = document.getElementById("tr3");
+                                var tr4 = document.getElementById("tr4");
+                                var blogs1 = document.getElementById("blogs1");
+                                var learn_more = document.getElementById("learn_more");                                
+                                tr1.style.cssText='visibility:hidden;position:absolute;';
+                                tr2.style.cssText='visibility:hidden;position:absolute;';
+                                tr3.style.cssText='visibility:visible;position:relative;';
+                                tr4.style.cssText='visibility:hidden;position:absolute;';
+                                blogs1.style.cssText='margin-top:300px;';
+                                learn_more.style.cssText='visibility:visible;position:relative;';
+                            }    
+                            function display3(){
+                                var tr1 = document.getElementById("tr1");
+                                var tr2 = document.getElementById("tr2");
+                                var tr3 = document.getElementById("tr3");
+                                var tr4 = document.getElementById("tr4");                                
+                                var blogs1 = document.getElementById("blogs1");
+                                var learn_more = document.getElementById("learn_more");
+                                tr1.style.cssText='visibility:hidden;position:absolute;';
+                                tr2.style.cssText='visibility:hidden;position:absolute;';
+                                tr3.style.cssText='visibility:hidden;position:absolute;';
+                                tr4.style.cssText='visibility:visible;position:relative;';                              
+                                blogs1.style.cssText='margin-top:300px;';
+                                learn_more.style.cssText='visibility:visible;position:relative;';
+                            }    
+                        </script>
+                    </tbody>
+                </table>
+                
+            </div>
+	</div>
+	<!-- //portfolio -->
+    <!-- top-grids -->
+				<div class="blog" id="blogs1">
+					<div class="container">
+						<div class="service-head text-center">
+						<h4>ACTOR & ACTRESS</h4>
+						<h3>MY <span>FELLOW</span></h3>
+						<span class="border one"></span>
+					</div>
+					    <div class="news-grid w3l-agile">
+					    <div class="col-md-6 news-img">
+						  <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="../images/team/hg3.jpg" alt=" " title="胡歌" class="img-responsive"></a>
+						 
+						</div>
+					    <div class="col-md-6 news-text">
+						   <h3> <a href="#" data-toggle="modal" data-target="#myModal1">胡歌</a></h3>
+							<ul class="news">
+                                <li><i class="glyphicon glyphicon-user"></i> 
+                                    <span>
+                                        <span class="font-888">
+                                            职业：
+                                        </span>
+                                        演员 歌手
+                                    </span>
+                                </li>
+                                <li><i class="glyphicon glyphicon-calendar"></i> 
+                                    <span>
+                                        <span class="font-888">
+                                            出生日期：
+                                        </span>
+                                        1982-09-20
+                                    </span>
+                                </li>
+                                <li><i class="glyphicon glyphicon-film"></i> 
+                                    <span>
+                                        <span class="font-888">
+                                            代表作品：
+                                        </span>
+                                        仙剑奇侠传 天外飞仙 仙剑奇侠传三 神话 伪装者 琅琊榜 大好时光 猎场
+                                    </span>
+                                </li>
+                                <li><i class="glyphicon glyphicon-tags"></i>
+                                    <span>
+                                        <span class="font-888">
+                                            粉丝昵称：
+                                        </span>
+                                        胡椒粉
+                                    </span>
+                                </li>
+							</ul>
+							<p>度过大难,将有大成,继续努力,终成大器! 虽经历车祸亦不改他对生活的热忱。他以逍遥之姿风华绝代，他用沉稳之态幻彩重生，2015年，他用三部大剧实力霸屏，横跨古今，尽显逸群之才。</p>
+							<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">了解更多</a>
+					
+						</div>
+		
+						<div class="clearfix"></div>
+					    </div>
+					    <div class="news-grid">
+
+					    <div class="col-md-6 news-text two">
+						   <h3> <a href="#" data-toggle="modal" data-target="#myModal1">倪妮</a></h3>
+                           <ul class="news">
+                                <li><i class="glyphicon glyphicon-user"></i> 
+                                    <span>
+                                        <span class="font-888">
+                                            职业：
+                                        </span>
+                                        演员
+                                    </span>
+                                </li>
+                                <li><i class="glyphicon glyphicon-calendar"></i> 
+                                    <span>
+                                        <span class="font-888">
+                                            出生日期：
+                                        </span>
+                                        1988-08-08
+                                    </span>
+                                </li>
+                                <li><i class="glyphicon glyphicon-film"></i> 
+                                    <span>
+                                        <span class="font-888">
+                                            代表作品：
+                                        </span>
+                                        金陵十三钗 我想和你好好的 等风来 匆匆那年 悟空传 28岁未成年 天盛长歌
+                                    </span>
+                                </li>
+                                <li><i class="glyphicon glyphicon-tags"></i>
+                                    <span>
+                                        <span class="font-888">
+                                            别名：
+                                        </span>
+                                        喵总
+                                    </span>
+                                </li>
+							</ul>
+							<p>妖媚时灿烂如花或是单纯干练的造型，或大气妩媚或俏皮可爱，展现多种风情与灵气。从巴黎时装周到各种顶级时尚杂志封面大片，时尚圈显然已迫不及待抛出橄榄枝欢迎这个兼具风情和纯真的独特少女。</p>
+							<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">了解更多</a>
+					
+						</div>
+						<div class="col-md-6 news-img two">
+						   <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="../images/team/nn.jpg" alt=" " title="倪妮" class="img-responsive"></a>
+						 
+						</div>
+						<div class="clearfix"></div>
+					    </div>
+					    <div class="news-grid">
+					    <div class="col-md-6 news-img">
+						  <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="../images/team/ck.jpg" alt=" " title="陈坤" class="img-responsive"></a>
+						 
+						</div>
+					    <div class="col-md-6 news-text">
+						   <h3> <a href="#" data-toggle="modal" data-target="#myModal1">陈坤</a></h3>
+                           <ul class="news">
+                                <li><i class="glyphicon glyphicon-user"></i> 
+                                    <span>
+                                        <span class="font-888">
+                                            职业：
+                                        </span>
+                                        演员 歌手
+                                    </span>
+                                </li>
+                                <li><i class="glyphicon glyphicon-calendar"></i> 
+                                    <span>
+                                        <span class="font-888">
+                                            出生日期：
+                                        </span>
+                                        1976-02-04
+                                    </span>
+                                </li>
+                                <li><i class="glyphicon glyphicon-film"></i> 
+                                    <span>
+                                        <span class="font-888">
+                                            代表作品：
+                                        </span>
+                                        金粉世家 寻龙诀 龙门飞甲 云水谣 画皮 火锅英雄 脱身
+                                    </span>
+                                </li>
+                                <li><i class="glyphicon glyphicon-tags"></i>
+                                    <span>
+                                        <span class="font-888">
+                                            别名：
+                                        </span>
+                                        坤少
+                                    </span>
+                                </li>
+							</ul>
+							<p>冷峻的面孔，时刻充满忧伤的双眸，从《金粉世家》到《天盛长歌》，从贫困山区到珠穆朗玛，陈坤以自己对演员的定义，一次又一次地突破，让演员这个职业在他的身上熠熠生辉。</p>
+							<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">了解更多</a>
+					
+						</div>
+		
+						<div class="clearfix"></div>
+                        </div>
+                        <div class="news-grid">
+
+                            <div class="col-md-6 news-text two">
+                               <h3> <a href="#" data-toggle="modal" data-target="#myModal1">唐嫣</a></h3>
+                               <ul class="news">
+                                    <li><i class="glyphicon glyphicon-user"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                职业：
+                                            </span>
+                                            演员
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-calendar"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                出生日期：
+                                            </span>
+                                            1983-12-06
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-film"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                代表作品：
+                                            </span>
+                                            何以笙箫默 锦绣未央 夏家三千金 仙剑奇侠传三 活色生香 金玉良缘 赏金猎人
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-tags"></i>
+                                        <span>
+                                            <span class="font-888">
+                                                别名：
+                                            </span>
+                                            糖糖
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p>初见时是出尘脱俗的女娲后人紫萱，再见便是心机深沉、背负重担的李未央。以傻白甜的形象入行，唐嫣努力地进行转型，最终以高冷大气成名。</p>
+                                <a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">了解更多</a>
+                        
+                            </div>
+                            <div class="col-md-6 news-img two">
+                               <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="../images/team/ty.jpg" alt=" " title="唐嫣" class="img-responsive"></a>
+                             
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+					</div>
+                </div>
+                <div class="blog" id="blogs">
+                        <div class="container">
+                            <div class="service-head text-center">
+                            <h4>DIRECTOR</h4>
+                            <h3>MY <span>DIRECTOR</span></h3>
+                            <span class="border one"></span>
+                        </div>
+                        <div class="news-grid w3l-agile">
+                            <div class="col-md-6 news-img">
+                              <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="../images/team/zxc.jpg" alt=" " title="周星驰" class="img-responsive"></a>
+                             
+                            </div>
+                            <div class="col-md-6 news-text">
+                               <h3> <a href="#" data-toggle="modal" data-target="#myModal1">周星驰</a></h3>
+                                <ul class="news">
+                                    <li><i class="glyphicon glyphicon-user"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                职业：
+                                            </span>
+                                            演员 导演 编剧 监制 制片人 出品人 商人
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-calendar"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                出生日期：
+                                            </span>
+                                            1962-06-22
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-film"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                代表作品：
+                                            </span>
+                                            赌圣 逃学威龙系列 唐伯虎点秋香 大话西游系列 喜剧之王 少林足球 功夫 长江7号
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-tags"></i>
+                                        <span>
+                                            <span class="font-888">
+                                                别名：
+                                            </span>
+                                            星爷
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p>周星驰是华语影坛的标志性人物之一，被誉为中国的查理·卓别林。他与成龙、周润发并称为“双周一成”，意为香港电影的票房保证。他不仅在商业电影方面取得了很高的成就，而且还制造了具有独特风格的无厘头式喜剧，更缔造了“周星驰现象”。</p>
+                                <a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">了解更多</a>
+                        
+                            </div>
+            
+                            <div class="clearfix"></div>
+                            </div>
+                            <div class="news-grid">
+    
+                            <div class="col-md-6 news-text two">
+                               <h3> <a href="#" data-toggle="modal" data-target="#myModal1">张艺谋</a></h3>
+                               <ul class="news">
+                                    <li><i class="glyphicon glyphicon-user"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                职业：
+                                            </span>
+                                            导演 摄影师 编剧 演员
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-calendar"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                出生日期：
+                                            </span>
+                                            1950-04-02
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-film"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                代表作品：
+                                            </span>
+                                            红高粱 秋菊打官司 大红灯笼高高挂 活着 我的父亲母亲 英雄 金陵十三钗 归来 影
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-tags"></i>
+                                        <span>
+                                            <span class="font-888">
+                                                别名：
+                                            </span>
+                                            老谋子
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p>“第五代导演“的代表人物之一，其电影在中国电影发展史上占有重要地位。他的电影集民族文化、社会思考、文化寻根和电影创新于一体。通过反常规的银幕造型给人以强烈的视觉冲击，达到独特的艺术境界。</p>
+                                <a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">了解更多</a>
+                        
+                            </div>
+                            <div class="col-md-6 news-img two">
+                               <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="../images/team/zym.jpg" alt=" " title="张艺谋" class="img-responsive"></a>
+                             
+                            </div>
+                            <div class="clearfix"></div>
+                            </div>
+                            <div class="news-grid">
+                            <div class="col-md-6 news-img">
+                              <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="../images/team/fxg.jpg" alt=" " title="冯小刚" class="img-responsive"></a>
+                             
+                            </div>
+                            <div class="col-md-6 news-text">
+                               <h3> <a href="#" data-toggle="modal" data-target="#myModal1">冯小刚</a></h3>
+                               <ul class="news">
+                                    <li><i class="glyphicon glyphicon-user"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                职业：
+                                            </span>
+                                            导演 编剧 演员
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-calendar"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                出生日期：
+                                            </span>
+                                            1958-03-18
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-film"></i> 
+                                        <span>
+                                            <span class="font-888">
+                                                代表作品：
+                                            </span>
+                                            集结号 甲方乙方 天下无贼 唐山大地震 非诚勿扰 一九四二 我不是潘金莲 老炮儿 芳华
+                                        </span>
+                                    </li>
+                                    <li><i class="glyphicon glyphicon-tags"></i>
+                                        <span>
+                                            <span class="font-888">
+                                                别名：
+                                            </span>
+                                            刚子
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p>冯小刚擅长商业片，作品风格以京味儿喜剧著称。他将喜剧精神、世俗精神以及平民精神植入到电影中，为中国电影产业创造了独具特色的电影范式，形成了一套将线型叙述与喜剧类型结合在一起的商业电影美学体系。</p>
+                                <a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">了解更多</a>
+                        
+                            </div>
+            
+                            <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog" id="blogs">
+                            <div class="container">
+                                <div class="service-head text-center">
+                                <h4>SCREENWRITER</h4>
+                                <h3>MY <span>ERITOR</span></h3>
+                                <span class="border one"></span>
+                            </div>
+                            <div class="news-grid w3l-agile">
+                                <div class="col-md-6 news-img">
+                                  <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="../images/team/lzy.jpg" alt=" " title="刘震云" class="img-responsive"></a>
+                                 
+                                </div>
+                                <div class="col-md-6 news-text">
+                                   <h3> <a href="#" data-toggle="modal" data-target="#myModal1">刘震云</a></h3>
+                                    <ul class="news">
+                                        <li><i class="glyphicon glyphicon-user"></i> 
+                                            <span>
+                                                <span class="font-888">
+                                                    职业：
+                                                </span>
+                                                编剧 作家
+                                            </span>
+                                        </li>
+                                        <li><i class="glyphicon glyphicon-calendar"></i> 
+                                            <span>
+                                                <span class="font-888">
+                                                    出生日期：
+                                                </span>
+                                                1958-05-20
+                                            </span>
+                                        </li>
+                                        <li><i class="glyphicon glyphicon-film"></i> 
+                                            <span>
+                                                <span class="font-888">
+                                                    代表作品：
+                                                </span>
+                                                一地鸡毛 我叫刘跃进 一句顶一万句 我不是潘金莲
+                                        </li>
+                                        <li><i class="glyphicon glyphicon-tags"></i>
+                                            <span>
+                                                <span class="font-888">
+                                                    主要成就：
+                                                </span>
+                                                2016年埃及文化最高荣誉奖 2009第四届中国作家富豪榜 
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <p>无法把握的欲望，人性的弱点，和严密的社会权力机制，在刘震云所创造的普通人生活世界中，构成难以挣脱的网。生活于其间的人物面对强大的“环境”压力，对命运有不可知的宿命感；同时又在适应这一生存环境的过程中，经历了人性的扭曲。</p>
+                                    <a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">了解更多</a>
+                            
+                                </div>
+                
+                                <div class="clearfix"></div>
+                                </div>
+                                <div class="news-grid">
+        
+                                <div class="col-md-6 news-text two">
+                                   <h3> <a href="#" data-toggle="modal" data-target="#myModal1">述平</a></h3>
+                                   <ul class="news">
+                                        <li><i class="glyphicon glyphicon-user"></i> 
+                                            <span>
+                                                <span class="font-888">
+                                                    职业：
+                                                </span>
+                                                编剧 作家
+                                            </span>
+                                        </li>
+                                        <li><i class="glyphicon glyphicon-calendar"></i> 
+                                            <span>
+                                                <span class="font-888">
+                                                    出生日期：
+                                                </span>
+                                                1962-03-02
+                                            </span>
+                                        </li>
+                                        <li><i class="glyphicon glyphicon-film"></i> 
+                                            <span>
+                                                <span class="font-888">
+                                                    代表作品：
+                                                </span>
+                                                赵先生 有话好好说 鬼子来了 让子弹飞
+                                            </span>
+                                        </li>
+                                        <li><i class="glyphicon glyphicon-tags"></i>
+                                            <span>
+                                                <span class="font-888">
+                                                    主要成就：
+                                                </span>
+                                                第31届香港电影金像奖最佳编剧奖（提名）
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <p>述平是被列入"晚生代作家"群体的创作者之一。他的作品从生活的一个侧面——情爱的角度来反映社会生活的变化及人的行为和心理。虽然无重大主题的刻写，但真实、朴素，有一定的可读性。述平小说的题材和内容主要是情与欲的描写，从这一点上来看，情的成分要多于欲的成分。</p>
+                                    <a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">了解更多</a>
+                            
+                                </div>
+                                <div class="col-md-6 news-img two">
+                                   <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="../images/team/sp.jpg" alt=" " title="述平" class="img-responsive"></a>
+                                 
+                                </div>
+                                <div class="clearfix"></div>
+                                </div>
+                              
+                            </div>
+                        </div>
+        </div>
+        <div class="clear"></div>
+        <div class="myfooter">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="lxwm">
+                        <p><span style="font-size:16px; color: gray;">联系我们：</span></p>
+                        <i style="font-size:36px;color: #1e50ae;">13100626808</i>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="footer-center">
+                    <div class="lxfs">
+                        <p>联系QQ：2685977513</p>
+                        <p>联系电话：13100626808</p>
+                        <p>联系邮箱：2685977513@qq.com</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="lxdz">
+                        <p>联系地址：中南财经政法大学(南湖校区) 临湖一栋</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="return-nav">
+                    <ul>
+                        <li><a href="index.html">主页</a></li>
+                        <li><a href="#">团队阵容</a></li>
+                        <li><a href="photo_spot.html">拍摄现场</a></li>
+                        <li><a href="service_center.html">服务中心</a></li>
+                        <li><a href="about_us.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                        ©2019 - 鲁坤的网站 版权所有
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
